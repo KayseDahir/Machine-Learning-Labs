@@ -76,4 +76,4 @@ We also test the regression tree with `max_depth=12` to observe its impact on mo
 **Finding:**  
 MSE is noted to be increased by increasing the max_depth of the tree. This may be because of the model having excessive parameters, causing it to overfit the training data and perform worse on the testing data. Another important observation is that the model gives a negative value of R², indicating that the prediction model does a very poor job of predicting the values on a test set.
 
-![Regression Tree Output](./screenshots/Result_improvement.png)
+![Regression Tree Output](./screenshots/Result_max_depth_12.png)
