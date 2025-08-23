@@ -7,7 +7,6 @@ Lab work for machine learning models.
 This lab demonstrates the use of regression trees to predict tip amounts from a taxi dataset. The analysis includes feature selection, model evaluation, and parameter tuning.
 This lab demonstrates the use of regression trees to predict tip amounts from a taxi dataset. The analysis includes feature selection, model evaluation, and parameter tuning.
 
-
 ### Installation
 
 Make sure you have the required Python packages installed. You can install them using:
@@ -47,7 +46,6 @@ We first examine the correlation between each feature and the target variable (`
 **Finding:**  
 Fare amount, toll amount, and trip distance are the top features affecting the tip amount, which makes logical sense.
 
-
 ### Feature Removal Effect
 
 Next, we remove four features that are not correlated with the target variable to observe their effect on model performance:
@@ -70,4 +68,11 @@ We then decrease the `max_depth` parameter of the regression tree to 4 and obser
 **Finding:**  
 The MSE value decreases and the R² value increases, indicating that a `max_depth=4` may be more suitable for this dataset.
 
+---
 
+### Effect of max_depth=12
+
+We also test the regression tree with `max_depth=12` to observe its impact on model performance.
+
+**Finding:**  
+MSE is noted to be increased by increasing the max_depth of the tree. This may be because of the model having excessive parameters, causing it to overfit the training data and perform worse on the testing data. Another important observation is that the model gives a negative value of R², indicating that the prediction model does a very poor job of predicting the values on a test set.
