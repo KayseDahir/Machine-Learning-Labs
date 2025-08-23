@@ -68,6 +68,9 @@ We then decrease the `max_depth` parameter of the regression tree to 4 and obser
 **Finding:**  
 The MSE value decreases and the R² value increases, indicating that a `max_depth=4` may be more suitable for this dataset.
 
+![Regression Tree Output](./screenshots/Result_improvement.png)
+
+
 ---
 
 ### Effect of max_depth=12
