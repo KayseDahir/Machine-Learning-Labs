@@ -42,7 +42,7 @@ import seaborn as sns
 
 We first examine the correlation between each feature and the target variable (`tip_amount`). The top three features most correlated with tip amount are identified using:
 
-
+![Regression Tree Output](./screenshots/correlation_figure.png)
 
 **Finding:**  
 Fare amount, toll amount, and trip distance are the top features affecting the tip amount, which makes logical sense.
