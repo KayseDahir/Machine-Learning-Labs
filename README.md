@@ -59,7 +59,16 @@ After removing these features, we re-run the regression tree and evaluate the Me
 **Finding:**  
 The MSE and R² values do not change significantly, showing that these parameters have minimal effect on the final regression output.
 
----
+
+### Effect of max_depth=12
+
+We also test the regression tree with `max_depth=12` to observe its impact on model performance.
+
+**Finding:**  
+MSE is noted to be increased by increasing the max_depth of the tree. This may be because of the model having excessive parameters, causing it to overfit the training data and perform worse on the testing data. Another important observation is that the model gives a negative value of R², indicating that the prediction model does a very poor job of predicting the values on a test set.
+
+![Regression Tree Output](./screenshots/Result_max_depth_12.png)
+
 
 ### Effect of max_depth=4
 
@@ -70,11 +79,3 @@ The MSE value decreases and the R² value increases, indicating that a `max_dept
 
 ![Regression Tree Output](./screenshots/Result_max_depth_4.png)
 
-### Effect of max_depth=12
-
-We also test the regression tree with `max_depth=12` to observe its impact on model performance.
-
-**Finding:**  
-MSE is noted to be increased by increasing the max_depth of the tree. This may be because of the model having excessive parameters, causing it to overfit the training data and perform worse on the testing data. Another important observation is that the model gives a negative value of R², indicating that the prediction model does a very poor job of predicting the values on a test set.
-
-![Regression Tree Output](./screenshots/Result_max_depth_12.png)
